@@ -1,0 +1,73 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+        python-version: ['3.9']
+        aw-version: ["v0.10.0"]
+        aw-server: ["aw-server", "aw-server-rust"]
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    # Start aw-server, insert fake data
+    - name: Install and run ActivityWatch
+      run: |
+        wget -O activitywatch.zip https://github.com/ActivityWatch/activitywatch/releases/download/${{ matrix.aw-version }}/activitywatch-${{ matrix.aw-version }}-linux-x86_64.zip
+        unzip activitywatch.zip
+        ./activitywatch/${{ matrix.aw-server }}/${{ matrix.aw-server }} --testing &
+    - name: Insert fake data into aw-server
+      run: |
+        pip install git+https://github.com/ActivityWatch/aw-client.git
+        wget -O fakedata.py https://github.com/ActivityWatch/aw-fakedata/raw/ca6047e6e2cdc6aee13bc441f4fd3c9f0e36eda9/aw-fakedata.py
+        python3 fakedata.py
+
+    - name: Install
+      run: npm ci
+    - name: Build
+      run: npm run build
+    - name: Run tests
+      run: |
+        npm test
+        bash <(curl -s https://codecov.io/bash)
+    - name: Serve webui
+      run: npm run serve &
+    - name: Run e2e tests with testcafe
+      uses: DevExpress/testcafe-action@latest
+      with:
+        args: "chrome test/e2e/"
+    - name: Upload build
+      uses: actions/upload-artifact@v2-preview
+      with:
+        name: build
+        path: dist/*
+    - name: Upload screenshots
+      uses: actions/upload-artifact@v2-preview
+      with:
+        name: screenshots
+        path: screenshots/*
+
+

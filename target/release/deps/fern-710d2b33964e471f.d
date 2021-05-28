@@ -1,0 +1,12 @@
+C:\Apps\Git\build-software\timebench\aw-server-rust\target\release\deps\fern-710d2b33964e471f.rmeta: C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\lib.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\builders.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\errors.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\log_impl.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\colors.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\meta.rs
+
+C:\Apps\Git\build-software\timebench\aw-server-rust\target\release\deps\libfern-710d2b33964e471f.rlib: C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\lib.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\builders.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\errors.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\log_impl.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\colors.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\meta.rs
+
+C:\Apps\Git\build-software\timebench\aw-server-rust\target\release\deps\fern-710d2b33964e471f.d: C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\lib.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\builders.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\errors.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\log_impl.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\colors.rs C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\meta.rs
+
+C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\lib.rs:
+C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\builders.rs:
+C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\errors.rs:
+C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\log_impl.rs:
+C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\colors.rs:
+C:\Users\vinhbv1\.cargo\registry\src\github.com-1ecc6299db9ec823\fern-0.6.0\src\meta.rs:

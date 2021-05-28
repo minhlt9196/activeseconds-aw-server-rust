@@ -1,0 +1,1 @@
+{"rustc":3216230013078376912,"features":"[]","target":10792472713283433088,"profile":2285152228202085614,"path":7896434931730684066,"deps":[[17671881657559241013,"winapi",false,10310759876863888558]],"local":[{"CheckDepInfo":{"dep_info":"release\\.fingerprint\\atty-0f3661c87630feb7\\dep-lib-atty"}}],"rustflags":[],"metadata":2329458237537140231,"config":0,"compile_kind":0}

@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=C:\Apps\Git\build-software\timebench\aw-server-rust\target\release\build\typenum-2065d17e776711fe\out\consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=C:\Apps\Git\build-software\timebench\aw-server-rust\target\release\build\typenum-2065d17e776711fe\out\op.rs
